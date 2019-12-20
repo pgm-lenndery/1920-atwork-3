@@ -117,7 +117,7 @@
 
             let tempStr = '', href = '';
             projectsArray.forEach((link, index) => {
-                href = link.title.replace('https://www.establis.eu/api/', '').replace('&','_').replace('=','_').replace('?','_')
+                href = link.title.replace('https://www.establis.eu/api/', '').replace('&','_').replace('=','_').replace('?','_').replace('=', '_')
                 tempStr += `
                     <article data-id="${index}">
                         <div>
