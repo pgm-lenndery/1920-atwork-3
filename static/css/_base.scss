@@ -1,0 +1,164 @@
+:root {
+    --font-main: 'Space Mono', monospace;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: var(--font-main);
+    cursor: url(../images/mouse-pointer.svg) 4 0, auto;
+}
+
+*, *::after, *:hover {
+    transition: all .3s ease-in-out;
+}
+
+body {
+    margin: 30px 0px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    // transform-origin: center;
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        bottom: 0px;
+        left: 0%;
+        right: 0%;
+        height: 1.5px;
+        background-color: #0000ee;
+        width: 0%;
+    }
+
+    &:hover {
+        &::after {
+            content: ' ';
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 1.5px;
+            background-color: #0000ee;
+            width: 100%;
+        }
+    }
+
+
+    &:visited {
+        color: #0000ee;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+
+    a {
+        margin-right: 10px;
+        font-weight: bold;
+        
+        &:hover {
+            &::after {
+                height: 2px;
+            }
+        }
+
+    }
+
+    small {
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        width: fit-content;
+    }
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 30px;
+
+    nav {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        a {
+            margin-right: 26px;
+            white-space: nowrap;
+            cursor: url(../images/arrow-down.svg) 4 0, auto;
+        }
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .course-title {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 400;
+
+        &:not(:first-child) {
+            margin-top: 45px;
+        }
+    }
+
+    hr {
+        margin: 10px 0px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 25px;
+
+        & > div:nth-child(1) {
+            margin-right: 35px;
+        }
+
+        a {
+            cursor: url(../images/eye.svg) 4 0, auto;
+        }
+    }
+}
+
+// 404 ERROR MSG //////////////////////////////////////////////
+section[data-label="404-msg"] {
+    margin-top: 70px;
+    text-align: center;
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    .msg-gif {
+        width: 80%;
+        margin: 0 auto
+    }
+
+    a {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: fit-content;
+        text-align: center;
+
+        small {
+            font-weight: bold;
+        }
+
+        &::after {
+            height: 2px;
+        }
+    }
+}
