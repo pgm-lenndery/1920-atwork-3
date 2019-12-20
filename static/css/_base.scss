@@ -127,6 +127,10 @@ main {
 
         a {
             cursor: url(../images/eye.svg) 4 0, auto;
+
+            &.copy-url {
+                cursor: url(../images/clipboard.svg) 4 0, auto;
+            }
         }
     }
 }

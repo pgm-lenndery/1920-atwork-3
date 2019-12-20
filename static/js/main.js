@@ -126,7 +126,7 @@
                             <a class="project-url" href="./api-data/${href}.json" target="_blank"><small>Bezoeken</small></a>
                         </div>
                         <div>
-                            <a class="project-url" style="color: #0000ee;" onclick="copy('https://git.ahs.lennertderyck.be/1920-atwork-3/api-data/${href}.json')">URL Kopieren</a>
+                            <a class="copy-url" style="color: #0000ee;" onclick="copy('https://git.ahs.lennertderyck.be/1920-atwork-3/api-data/${href}.json')">URL Kopieren</a>
                         </div>
                     </article>
                 `

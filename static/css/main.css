@@ -139,6 +139,10 @@ main article a {
   cursor: url(../images/eye.svg) 4 0, auto;
 }
 
+main article a.copy-url {
+  cursor: url(../images/clipboard.svg) 4 0, auto;
+}
+
 section[data-label="404-msg"] {
   margin-top: 70px;
   text-align: center;
