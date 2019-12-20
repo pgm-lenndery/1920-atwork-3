@@ -166,3 +166,24 @@ section[data-label="404-msg"] {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+      filter: invert(1);
+      background: #252525;
+    }
+}
+  
+  @media (prefers-color-scheme: light) {
+    body {
+      filter: unset;
+      background: white;
+    }
+}
+  
+  @media (prefers-color-scheme: no-preference) {
+    body {
+      filter: unset;
+      background: white;
+    }
+}
